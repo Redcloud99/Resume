@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Information</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 480px;
+      width: 100%;
+      border-radius: 14px;
+      padding: 60px 40px 30px 40px; /* Increased top padding */
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      position: relative;
+    }
+
+    /* Back button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #ff5e62;
+      color: white;
+      border: none;
+      padding: 10px 18px; /* Increased padding */
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .back-button:hover {
+      background: #e14f52;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      color: #ff5e62;
+      text-align: center;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+    }
+
+    .info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      font-size: 1.15rem;
+      color: #333;
+    }
+
+    .info-list li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      background: #fff0f0;
+      box-shadow: 0 3px 10px rgba(255, 94, 98, 0.15);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .info-list li:hover {
+      background: #ffd6d6;
+    }
+
+    /* Icons */
+    .icon {
+      font-size: 1.8rem;
+      color: #ff5e62;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .container {
+        padding: 50px 25px 25px 25px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .info-list li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="history.back()">← Back</button>
+    <h1>Contact Information</h1>
+    <ul class="info-list">
+      <li><span class="icon">📞</span> <span>0916 312 4396</span></li>
+      <li><span class="icon">✉️</span> <span>valladoresjustin99@gmail.com</span></li>
+      <li><span class="icon">📍</span> <span>Purok 1, Barangay Camudmud, Babak District, Igacos</span></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Hobbies</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6b8dd6, #9ad3bc);
+      color: #222;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 100%;
+      padding: 30px 40px;
+      position: relative;
+    }
+
+    /* Back button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #3b4cca;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .back-button:hover {
+      background: #2a3599;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #3b4cca;
+      letter-spacing: 1.2px;
+    }
+
+    p.intro {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #555;
+    }
+
+    ul.hobbies-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    ul.hobbies-list li {
+      background: #e3f2fd;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    ul.hobbies-list li:hover {
+      background: #bbdefb;
+    }
+
+    /* Icon styles */
+    ul.hobbies-list li::before {
+      content: "🔥";
+      margin-right: 15px;
+      font-size: 1.3rem;
+    }
+
+    /* Different icons for each hobby */
+    ul.hobbies-list li:nth-child(1)::before { content: "📺"; }
+    ul.hobbies-list li:nth-child(2)::before { content: "💻"; }
+    ul.hobbies-list li:nth-child(3)::before { content: "🏀"; }
+    ul.hobbies-list li:nth-child(4)::before { content: "🖥️"; }
+    ul.hobbies-list li:nth-child(5)::before { content: "📱"; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="history.back()">← Back</button>
+    <h1>My Hobbies</h1>
+    <p class="intro">Here are some things I really enjoy doing in my free time:</p>
+    <ul class="hobbies-list">
+      <li>Watching YouTube tutorials</li>
+      <li>Programming</li>
+      <li>Playing basketball</li>
+      <li>Computer games</li>
+      <li>Cellphone games</li>
+    </ul>
+  </div>
+</body>
+</html>
